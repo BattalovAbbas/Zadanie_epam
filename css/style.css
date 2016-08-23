@@ -1,0 +1,105 @@
+body {
+    padding-top: 50px;
+}
+table {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 15px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+th {
+    background: #BCEBDD;
+    color: white;
+    text-shadow: 0 1px 1px #2D2020;
+    padding: 10px 55px;
+}
+th, td {
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    border-color: white;
+}
+th:first-child {
+    border-top-left-radius: 10px;
+}
+th:last-child {
+    border-top-right-radius: 10px;
+}
+td {
+    padding: 5px 40px;
+    background: #F8E391;
+}
+tr:last-child td:first-child {
+    border-radius: 0 0 0 10px;
+}
+tr:last-child td:nth-last-child(2){
+    border-radius: 0 0 10px 0;
+}
+td:hover {
+    background: #F8D64D;
+}
+.triangle-up {
+	border: 10px solid transparent;
+    border-bottom: 10px solid;
+    display:  inline-block;
+    margin-left: 20px;    
+    margin-top: -5px;  
+    vertical-align: top;  
+}
+.triangle-down {
+	border: 10px solid transparent;
+    border-top: 10px solid;
+    display:  inline-block;
+    margin-left: 20px;
+    margin-top: 5px;    
+    vertical-align: top;  
+}
+.button {
+    font-weight: 00;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 3px;
+    margin-left: 10px;
+    padding-bottom: 3px;
+    border-radius: 10px;
+    background: rgb(64,199,129);
+    box-shadow: 0 -3px rgb(53,167,110) inset;
+} 
+.button:hover { 
+    background: rgb(53, 167, 110); 
+}
+.button:active {
+    background: rgb(33,147,90);
+    box-shadow: 0 3px rgb(33,147,90) inset;
+}
+.input{
+    border: 1px solid;
+    border-radius: 4px;
+    height: 20px;
+    padding-left: 5px;  
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#inputSearch{
+    background-image: url('icon/searchicon.png');
+    background-position: 3px; 
+    background-repeat: no-repeat;
+    padding-left: 25px;
+}
+.textName{
+    color: blue;
+    float: left;
+    margin-left: 20px;
+}
+.textCount{
+    background: rgb(97,89,89);
+    border-radius: 10px;
+    display:  inline-block;
+    color: white;
+    padding-left: 7px;
+    padding-right: 7px;
+    float:right;
+    margin-right: 20px;
+}

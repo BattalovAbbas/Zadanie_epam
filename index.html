@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <meta charset="utf-8"> 
+         <!--Загрузка стилей-->
+        <link type="text/css" rel="stylesheet" href="css/style.css"/>
+        <link type="text/css" rel="stylesheet" href="css/modalStyle.css"/>
+        <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+        
+    </head>
+    <body class="container">    
+        
+        <!--Основные элементы-->   
+        <div class="col-md-8 col-xs-10 col-sm-10">            
+            <input id="inputSearch" class ="input" placeholder= "Фильтр"/> 
+            <button id="btnSeacrh" class = "btn btn-sm btn-success">Search</button>
+            <button id="btnAddNew" class = "btn btn-sm btn-success">Add New</button>
+            <table id = "table" class="table table-hover">
+                <thead>
+                    <tr>
+                        <th class="text-center">Name
+                            <div id="sortingName" class="triangle-up"/>   
+                        </th>               
+                        <th class="text-center">Price
+                            <div id="sortingPrice" class="triangle-up"/>   
+                        </th>
+                        <th class="text-center">Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="bodyTable">
+                    
+                </tbody>
+            </table>
+            <input id="inputName" class ="input"  placeholder = "Название"/> 
+            <input id="inputCount" class ="input" placeholder = "Количество" onkeypress='return event.charCode >= 48 && event.charCode <= 57'/> 
+            <input id="inputPrice" class ="input" placeholder = "Цена"/> 
+            <input type="button"  id="btnAddOrUpdate" class = "btn btn-sm btn-success" value="Add" />            
+        </div> 
+        
+        <!--Модальное окно удаления-->
+        <div id="containerDelete">
+            <form id="formDelete">
+                <div id="messageDelete"></div>
+                <input type="button" class ="btn btn-xs btn-danger" id="btnModalOk" value="Да">
+                <input type="button" class ="btn btn-xs btn-success" id="btnModalCancel" value="Нет">
+            </form>
+        </div>
+        
+        <!--Подсказка-->
+        <form id="tooltip">
+            <div id="messageTooltip"></div>
+        </form>
+        
+        <!--Загрузка скриптов-->
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+        <script src="javascript/app.js"></script>   
+        <script src="javascript/models/productsList.js"></script>           
+        <script src="javascript/views/tableRowView.js"></script>     
+        <script src="javascript/views/tooltips.js"></script>   
+        <script src="javascript/controllers/validation.js"></script>        
+        <script src="javascript/controllers/modalWindow.js"></script> 
+        <script src="javascript/controllers/tableControllers.js"></script>   
+    </body>     
+</html>
